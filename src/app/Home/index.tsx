@@ -1,12 +1,12 @@
 //importa os components nativos
-import { View, Text, StyleSheet } from "react-native"
+import { View, Image } from "react-native"
 import { styles } from "./styles"
 
 export function Home(){
 // retorna essa funcao app
   return (
       <View style={styles.container}>
-        <Text style={styles.text}>Hello, World!</Text>
+        <Image source={require("../../assets/logo.png")}  style={styles.logo}/>
       </View>
   )
 }
