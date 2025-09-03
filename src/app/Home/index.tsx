@@ -6,7 +6,7 @@ export function Home(){
 // retorna essa funcao app
   return (
       <View style={styles.container}>
-        <Image source={require("../../assets/logo.png")}  style={styles.logo}/>
+        <Image source={require("@/assets/logo.png")}  style={styles.logo}/>
       </View>
   )
 }
