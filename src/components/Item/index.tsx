@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { Trash2 } from "lucide-react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons"
 
 import { styles } from "./styles";
 import { StatusIcon } from "../StatusIcon";
@@ -27,7 +27,7 @@ export function Item({ data, onStatus, onRemove }: Props){
                 {data.description}
             </Text>
             <TouchableOpacity onPress={onRemove}>
-                <Trash2 size={18} color="#828282" />
+            <MaterialCommunityIcons name="trash-can-outline" size={20} color="#828282" />
             </TouchableOpacity>
         </View>
     )
